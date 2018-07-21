@@ -22,6 +22,19 @@ This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the
         "destination": ["END_LATITUDE", "END_LONGTITUDE"]
     }
     ```
+  - Sample Curl:
+
+    ```
+        curl -X POST \
+        http://localhost:8080/order \
+        -H 'Cache-Control: no-cache' \
+        -H 'Content-Type: application/json'
+        -d '{
+            "origin": [32.048104, -116.543285],
+            "destination": [45.264057, -122.763736]
+        }
+        '
+    ```
 
   - Response:
 
@@ -54,6 +67,18 @@ This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the
         "status":"taken"
     }
     ```
+  - Sample Curl:
+
+    ```
+    curl -X PUT \
+    http://localhost:8080/order/2 \
+    -H 'Cache-Control: no-cache' \
+    -H 'Content-Type: application/json'
+    -d '{
+        "status":"taken"
+    }'
+    ```
+
   - Response:
     Header: `HTTP 200`
     Body:
@@ -87,6 +112,14 @@ This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the
         },
         ...
     ]
+    ```
+
+  - Sample Curl:
+
+    ```
+        curl -X GET \
+        'http://localhost:8080/orders?page=1&limit=3' \
+        -H 'Cache-Control: no-cache'
     ```
 
 
