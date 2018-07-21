@@ -1,6 +1,6 @@
 ## Introduction
-This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the requirements of 
-[Lalamove](https://github.com/lalamove/challenge-2018/blob/master/backend.md)
+This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the requirements 
+[here](https://github.com/lalamove/challenge-2018/blob/master/backend.md)
 
 ## How To Run The Project
 1. navigate to top level folder and run `start.sh`, the `start.sh` will build the docker containers, `tech_challenge` , and `mysql` respectively.

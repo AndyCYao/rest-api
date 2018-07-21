@@ -2,9 +2,9 @@
 version: '3'
 services:
   flask:
-    build: ./tech_challenge
+    build: ./app
     volumes:
-      - ./tech_challenge:/usr/src/tech_challenge
+      - ./app:/usr/src/app
     links:
       - "mysql"
     ports:

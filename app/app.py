@@ -6,7 +6,6 @@ import json
 import requests
 
 app = Flask(__name__)
-# https://github.com/lalamove/challenge-2018/blob/master/backend.md
 
 db = yaml.load(open('db.yaml'))
 app.config['MYSQL_HOST']     = db['mysql_host']
