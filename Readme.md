@@ -90,12 +90,10 @@ This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the
     ```
 
 
-## If More Time To Do List
+### If More Time To Do List
 - Need another table for storing who is taking the order.
 - Need table for the different statuses, currently stored as varchar
 - Prevent sql injection by using SQLAlchemy
-
-# TO DO LIST
-- Some unit test with database MOCK
+- Some unit test with mocked databases
  
 
