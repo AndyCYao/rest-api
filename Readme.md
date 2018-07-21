@@ -1,5 +1,5 @@
 ## Introduction
-This is a RESTful API build with `python flask`, `mysql`, `docker`, based on the requirements 
+This is a RESTful API build with `python flask`, `mysql`, `docker-compose`, based on the requirements 
 [here](https://github.com/lalamove/challenge-2018/blob/master/backend.md)
 
 ## How To Run The Project
