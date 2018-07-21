@@ -88,7 +88,10 @@ def get_order_list():
     page    = flask_request.args.get('page')
     limit   = flask_request.args.get('limit')
     cur = mysql.connection.cursor()
-    sql = "SELECT order_id, distance, status FROM order_tbl ORDER BY order_id ASC LIMIT {}".format(limit)
+    sql = """SELECT order_id, distance, status 
+            FROM order_tbl 
+            ORDER BY order_id ASC LIMIT {} 
+            OFFSET {}""".format(limit, page)
     row_header = ["id", "distance", "status"]
     cur.execute(sql)
     rv = cur.fetchall()
