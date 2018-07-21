@@ -1,0 +1,6 @@
+google_api_key: 'AIzaSyDDhb284C9E3tfO4wb9p77xGhDa3FrkmeY'
+mysql_host: 'mysql'
+mysql_user: 'root'
+mysql_password: 'testtest'
+mysql_db: 'lala'
+mysql_port: 3306

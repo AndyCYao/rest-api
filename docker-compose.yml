@@ -1,0 +1,21 @@
+#run with "docker-compose up"
+version: '3'
+services:
+  flask:
+    build: ./tech_challenge
+    volumes:
+      - ./tech_challenge:/usr/src/tech_challenge
+    links:
+      - "mysql"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+      
+  mysql:
+    build: ./handler
+    environment:
+      MYSQL_ROOT_PASSWORD: testtest
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - "3306:3306"

@@ -1,0 +1,4 @@
+Flask==1.0.2
+Flask-MySQLdb==0.2.0
+PyYAML==3.13
+requests==2.19.1
